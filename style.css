@@ -1,0 +1,31 @@
+ html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: transparent;
+    font-family: "Arial", sans-serif;
+}
+
+#canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#banner {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 900;
+    color: #ff66cc;
+    text-shadow: 0 0 20px #ff99dd, 0 0 40px #ff66cc;
+    animation: glow 3s infinite alternate ease-in-out;
+    pointer-events: none;
+}
+
+@keyframes glow {
+    0% { transform: scale(1); opacity: 0.8; }
+    100% { transform: scale(1.1); opacity: 1; }
+}
